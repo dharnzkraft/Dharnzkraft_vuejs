@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--  <link rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css">
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <title>New Quiz</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="#.png">
+      </div>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-group">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <header class="support-us">
+      <div id="headerSlider" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/home.png">
+            <div class="carousel-caption item-one animated bounceInUp">
+              <h1 class="">Contact Us</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="body-content" id="story">
+      <div class="container">
+        <div class="contact">
+          <div class="article">
+            <div class="article-heading">
+              <h3> Contact US</h3>
+              <hr>
+            </div>
+            <p>If you have any question, comments and suggestions feel free to write us below. Your feedback is incredibly important to us.</p>
+          </div>
+          <form  id="my-form">
+            <div id="form-err"></div>
+            <div id="form-success"></div>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="fname" class="col-form-label">First Name</label>
+                <input type="text" placeholder=" e.g John" class="form-control validate" id="fname" required>
+                <div class="helper-text" id="ferr"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="lname" class="col-form-label">Last Name</label>
+                <input type="text" placeholder=" e.g Doe" class="form-control validate" id="lname" required>
+                <div class="helper-text" id="lerr"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="email" class="col-form-label">Your E-mail</label>
+                <input type="email" placeholder=" johndoe@xyz.com" class="form-control validate" id="email" required>
+                <div class="helper-text" id="eerr"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="phone" class="col-form-label">Phone</label>
+                <input type="tel" placeholder="eg 0801234567" class="form-control validate" id="phone" required>
+                <div class="helper-text" id="perr"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <p>Message</p>
+              <textarea class="form-control" name="message" id="message" rows="6" placeholder="Your Message"></textarea>
+              <div class="d-flex justify-content-center">
+                <input type="submit" class="btn btn-secondary mt-4 text-center" id="submitform" value="Submit" name="submitform">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4>Made BY</h4>
+            <p>YourStory was carefully and Excellentlly designed/developed by <a href="http://adeyinkadaniel.info">Adeyinka Daniel</a>. It was developed with Vuejs Framework and Bootstrap for UI & responsive Designs.</p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2019 YourStory, All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>
